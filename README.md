@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# AWS Quiz Pro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+AWS Quiz Pro is a React application designed for personalized learning of Amazon Web Services (AWS). The app stores all question JSON data in the data folder, offering quizzes on diverse AWS services. Users can customize quizzes by selecting the number of questions they want, all within a responsive design.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+1. **Diverse Quizzes**: Explore quizzes covering a wide range of AWS services and concepts. 
+2. **Score Tracking**: Monitor your quiz scores and track your progress over time. 
+3. **Timer**: Utilize a timer to display the remaining minutes before the quiz concludes.
+4. **Responsive Design**: Experience a seamless interface on desktops, tablets, and mobile phones.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `yarn test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ensure you have Node.js and Yarn installed on your computer. If not, you can download Node.js [here](https://nodejs.org)
+and Yarn [here](https://yarnpkg.com/lang/en/docs/install/).
 
-### `yarn build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Fork and clone this repository to your machine
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```
+    git clone https://github.com/DavidDanso/aws_quizpro.git
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Access the project folder
 
-### `yarn eject`
+    ```
+    cd aws_quizpro
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the project dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```
+    yarn install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the app
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```
+    yarn start
+    ```
 
-## Learn More
+5. Install json-server using
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```
+    yarn global add json-server
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. Run the JSON server on port 9000
 
-### Code Splitting
+    ```
+    yarn run server 9000
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Your app should now be running on `http://localhost:9000`.
+If you decide to change the port number, ensure to update it in the useEffect within the app.js file.
 
-### Analyzing the Bundle Size
+## App Preview:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<table width="100%"> 
+  <tr>
+    <td width="50%">      
+    &nbsp; 
+    <br>
+    <p align="center">
+      Start Screen
+    </p>
+    <img src="https://github.com/DavidDanso/aws_quizpro/blob/main/public/ui/start-screen.png" />
+    </td> 
+    <td width="50%">
+    <br>
+    <p align="center">
+      Question Screen
+    </p>
+    <img src="https://github.com/DavidDanso/aws_quizpro/blob/main/public/ui/question-screen.png" />
+    </td>
+  </tr>
 
-### Making a Progressive Web App
+  <tr>
+    <td width="50%">      
+    &nbsp; 
+    <br>
+    <p align="center">
+      Correct Banner
+    </p>
+    <img src="https://github.com/DavidDanso/aws_quizpro/blob/main/public/ui/correct-banner.png" />
+    </td> 
+    <td width="50%">
+    <br>
+    <p align="center">
+     Wrong Banner
+    </p>
+    <img src="https://github.com/DavidDanso/aws_quizpro/blob/main/public/ui/wrong-banner.png" />
+    </td>
+  </tr>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  <tr>
+    <td width="50%">      
+    &nbsp; 
+    <br>
+    <p align="center">
+      Error Screen
+    </p>
+    <img src="https://github.com/DavidDanso/aws_quizpro/blob/main/public/ui/error-screen.png" />
+    </td> 
+    <td width="50%">
+    <br>
+    <p align="center">
+     Results Screen
+    </p>
+    <img src="https://github.com/DavidDanso/aws_quizpro/blob/main/public/ui/result-screen.png" />
+    </td>
+  </tr>
+</table>
 
-### Advanced Configuration
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Detailed usage description go here.
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+DavidDanso - davidkellybrownson@gmail.com
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/DavidDanso/aws_quizpro.git](https://github.com/DavidDanso/aws_quizpro.git)
