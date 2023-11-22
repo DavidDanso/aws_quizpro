@@ -1,0 +1,119 @@
+{
+  "questions": [
+    {
+      "question": "What is the core storage service in AWS that provides scalable and high-performance block storage for use with Amazon EC2 instances?",
+      "options": ["Amazon RDS", "Amazon EBS", "Amazon S3", "Amazon Redshift"],
+      "correctOption": 1,
+      "points": 15
+    },
+    {
+      "question": "Which AWS service is used to distribute incoming application traffic across multiple Amazon EC2 instances for high availability and fault tolerance?",
+      "options": ["Amazon S3", "Amazon VPC", "Amazon ELB", "Amazon RDS"],
+      "correctOption": 2,
+      "points": 15
+    },
+    {
+      "question": "In AWS, what is the primary service used for provisioning and managing relational databases?",
+      "options": ["Amazon RDS", "Amazon S3", "Amazon DynamoDB", "Amazon EC2"],
+      "correctOption": 0,
+      "points": 15
+    },
+    {
+      "question": "Which AWS service allows you to run code without provisioning or managing servers?",
+      "options": ["Amazon EC2", "AWS Lambda", "Amazon S3", "Amazon Redshift"],
+      "correctOption": 1,
+      "points": 15
+    },
+    {
+      "question": "What is the main purpose of Amazon S3 in AWS?",
+      "options": ["Compute", "Database", "Storage", "Networking"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which AWS service provides a fully managed NoSQL database service that offers fast and predictable performance with seamless scalability?",
+      "options": ["Amazon S3", "Amazon RDS", "Amazon EC2", "Amazon DynamoDB"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which AWS storage class is designed for data that is accessed infrequently but requires rapid access when needed?",
+      "options": [
+        "Standard Storage",
+        "Intelligent Tiering",
+        "Glacier",
+        "One Zone-IA"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the maximum size for an individual Amazon S3 object that can be stored in standard storage?",
+      "options": ["5 GB", "10 GB", "1 TB", "5 TB"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the primary function of Amazon VPC in AWS?",
+      "options": [
+        "Storing data",
+        "Content delivery",
+        "Networking",
+        "Computing"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which AWS service provides a fully managed data warehouse that can be used to run complex queries on large datasets?",
+      "options": ["Amazon S3", "Amazon RDS", "Amazon EC2", "Amazon Redshift"],
+      "correctOption": 3,
+      "points": 15
+    },
+    {
+      "question": "What is the main benefit of using Amazon S3's Glacier storage class?",
+      "options": [
+        "Low-latency access",
+        "Rapid data retrieval",
+        "Low cost for long-term storage",
+        "Frequent data access"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which AWS service allows you to create and manage a virtual private cloud (VPC) for your AWS resources?",
+      "options": ["Amazon RDS", "Amazon VPC", "Amazon EC2", "Amazon S3"],
+      "correctOption": 1,
+      "points": 15
+    },
+    {
+      "question": "What is the purpose of Amazon Elastic Container Service (ECS) in AWS?",
+      "options": [
+        "Database management",
+        "Container orchestration",
+        "Compute provisioning",
+        "Storage management"
+      ],
+      "correctOption": 1,
+      "points": 15
+    },
+    {
+      "question": "Which AWS service offers a serverless platform for building web applications?",
+      "options": ["Amazon EC2", "AWS Lambda", "Amazon S3", "Amazon RDS"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does AWS stand for?",
+      "options": [
+        "All Web Services",
+        "Advanced Web Solutions",
+        "Amazon Web Services",
+        "Absolute Web Security"
+      ],
+      "correctOption": 2,
+      "points": 10
+    }
+  ]
+}

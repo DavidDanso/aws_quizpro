@@ -1,0 +1,549 @@
+:root {
+  --color-darkest: #343a40;
+  --color-dark: #495057;
+  --color-medium: #ced4da;
+  --color-light: #f1f3f5;
+
+  --color-accent: #fecf6b;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-light);
+  background-color: var(--color-darkest) !important;
+  padding: 3.2rem;
+}
+
+/* loader */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32rem;
+  gap: 1.6rem;
+
+  color: var(--color-medium);
+  font-size: 1.4rem;
+}
+/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+  width: 50px;
+  height: 24px;
+  background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0%
+      50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
+  background-size: calc(100% / 3) 12px;
+  background-repeat: no-repeat;
+  animation: loader 1s infinite linear;
+}
+@keyframes loader {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 50rem;
+}
+
+/* error */
+.error {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 2rem;
+  background-color: #495057;
+  border-radius: 100px;
+  color: #ced4da;
+  margin-top: 32rem;
+}
+
+/* startscreen */
+.start {
+  margin-top: 12rem;
+}
+.start h1 {
+  font-size: 4rem;
+  color: #ced4da;
+  letter-spacing: 1px;
+}
+.start h6 {
+  font-size: 1.7rem;
+  color: #ced4da;
+  letter-spacing: 1px;
+  margin-top: 4px;
+  font-weight: 200;
+}
+.start p {
+  font-size: 2rem;
+  color: #ced4da7e;
+  letter-spacing: 1px;
+  margin-top: 12%;
+}
+.start p span {
+  float: right;
+}
+.start .dropdown--btn {
+  font-size: 2vh;
+  color: var(--color-light);
+  letter-spacing: 1px;
+  background-color: transparent;
+  padding: 6px 24px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s;
+  margin-top: 3px;
+  border: 1px solid #ced4da7e;
+}
+.start .dropdown--btn:hover {
+  border: 1px solid #ced4da7e;
+  background-color: #ced4da7e;
+  transition: 0.3s;
+  color: var(--color-light);
+}
+.start .dropdown-menu {
+  width: 100%;
+}
+.start .dropdown-menu li {
+  font-size: 2vh;
+  letter-spacing: 1px;
+}
+.start .start--btn {
+  font-size: 2vh;
+  color: var(--color-darkest);
+  letter-spacing: 1px;
+  background-color: #ced4da7e;
+  text-align: center;
+  padding: 6px 40px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s;
+  margin-top: 16%;
+  /* width: 50%; */
+}
+.start .start--btn:hover {
+  border: 1px solid #ced4da7e;
+  transition: 0.3s;
+  color: var(--color-light);
+}
+
+/* alert--banner */
+.alert--banner .correct {
+  background-color: #b7ed43d2;
+  width: 90%;
+  padding: 1%;
+  position: absolute;
+  top: 3%;
+  left: 5%;
+}
+.alert--banner .wrong {
+  background-color: #fd9999;
+  width: 90%;
+  padding: 1%;
+  position: absolute;
+  top: 3%;
+  left: 5%;
+}
+.alert--banner img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 2%;
+}
+.alert--banner h6 {
+  font-size: 2.2vh;
+  color: var(--color-darkest);
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+.alert--banner p {
+  font-size: 1.9vh !important;
+  color: var(--color-darkest) !important;
+  letter-spacing: 1px;
+  margin-left: 2%;
+  margin-top: -1%;
+}
+
+/* questions */
+.questions {
+  margin-top: 16rem;
+}
+.questions h1 {
+  font-size: 2rem;
+  color: #ced4da7e;
+  letter-spacing: 1px;
+}
+.questions h1 span {
+  font-size: 1.5rem;
+  color: #ced4daff;
+  letter-spacing: 1px;
+  float: right;
+}
+.questions p {
+  font-size: 2.1rem;
+  color: var(--color-light);
+  letter-spacing: 1px;
+}
+
+/* options */
+.options .btn {
+  font-family: inherit;
+  color: var(--color-dark);
+  font-size: 1.7rem;
+  background-color: var(--color-accent);
+  padding: 1.2rem 1.7rem;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.options .btn:not([disabled]):hover {
+  border: 1px solid var(--color-accent);
+  color: var(--color-light);
+}
+.options .btn-option:not([disabled]):hover {
+  transform: translateX(1.2rem);
+  color: var(--color-light);
+}
+.options .btn-option {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1%;
+}
+.options .btn-option.answer {
+  transform: translateX(2rem);
+  background-color: var(--color-accent);
+  opacity: 1;
+  color: var(--color-darkest);
+}
+.options button:disabled {
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-light);
+  opacity: 0.4;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  top: 85%;
+}
+.footer .line--divider {
+  color: var(--color-medium);
+  width: 33rem;
+}
+.footer h6 {
+  font-family: inherit;
+  color: var(--color-light);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-top: 1%;
+}
+.btn--actions {
+  margin-left: 20rem;
+  margin-top: -7%;
+}
+.footer button {
+  font-family: inherit;
+  color: var(--color-darkest);
+  font-size: 1.4rem;
+  background-color: #ced4da7e;
+  padding: 1rem 1.7rem;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.footer button:hover {
+  font-family: inherit;
+  color: var(--color-light);
+  font-size: 1.4rem;
+  background-color: transparent;
+  transition: 0.3s;
+  border: 1px solid #ced4da7e;
+}
+.left--btn {
+  margin-right: 6px;
+}
+.footer button:disabled {
+  background-color: transparent;
+  border: 1px solid #ced4da7e;
+  color: var(--color-light);
+  opacity: 0.3;
+}
+.footer span {
+  font-family: inherit;
+  color: var(--color-light);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin-top: 1%;
+  margin-bottom: 6%;
+}
+
+/* finished--screen */
+.finished--screen {
+  margin: 1%;
+}
+.screen--container {
+  background-color: var(--color-dark);
+  padding: 5%;
+  border-radius: 5px;
+}
+.finished--screen h3 {
+  font-family: inherit;
+  color: var(--color-light);
+  font-size: 3.1rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+.finished--screen p {
+  font-family: inherit;
+  color: var(--color-accent);
+  font-size: 2.3vh;
+  letter-spacing: 1px;
+  margin-top: 10%;
+}
+.finished--screen span {
+  color: var(--color-light);
+}
+.finished--screen button {
+  font-family: inherit;
+  color: var(--color-darkest);
+  font-size: 1.7rem;
+  background-color: #ced4da7e;
+  padding: 1rem 1.7rem;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s;
+  margin-top: 4%;
+}
+.finished--screen button:hover {
+  font-family: inherit;
+  color: var(--color-light);
+  background-color: transparent;
+  transition: 0.3s;
+  border: 1px solid #ced4da7e;
+}
+
+/********************** Extra small devices (portrait phones, less than 576px) ****************************/
+@media (max-width: 575.98px) {
+  .finished--screen {
+    margin-top: 70%;
+    width: 100%;
+  }
+  .finished--screen span {
+    display: block;
+  }
+}
+/************************ Small devices (landscape phones, 576px and up) *****************************/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    display: none;
+  }
+}
+/***************************** Medium devices (tablets, 768px and up) ********************************/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    display: none;
+  }
+}
+/********************************** Large devices (desktops, 992px and up) *********************************/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    display: none;
+  }
+}
+/************************ Extra large devices (large desktops, 1200px and up) ********************************/
+@media (min-width: 1200px) {
+  /****** startscreen ******/
+  .start {
+    margin-top: 22rem;
+  }
+  .start .aws--logo {
+    width: 15%;
+  }
+  .start h1 {
+    font-size: 5.6rem;
+    letter-spacing: 1px;
+  }
+  .start h6 {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    font-weight: 200;
+  }
+  .start p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 2%;
+  }
+  .start p span {
+    float: right;
+  }
+  .start .dropdown--btn {
+    font-size: 2vh;
+    letter-spacing: 1px;
+    padding: 6px 24px;
+    margin-top: 3px;
+  }
+  .start .dropdown-menu li {
+    font-size: 2vh;
+    letter-spacing: 1px;
+  }
+  .start .start--btn {
+    font-size: 2vh;
+    text-align: center;
+    padding: 6px 40px;
+    margin-top: 16%;
+  }
+
+  /****** alert--banner ******/
+  .alert--banner .correct {
+    width: 40%;
+    padding: 1%;
+    top: 3%;
+    left: 30%;
+  }
+  .alert--banner .wrong {
+    width: 40%;
+    padding: 1%;
+    top: 3%;
+    left: 30%;
+  }
+  .alert--banner img {
+    width: 30px;
+    margin-right: 2%;
+  }
+  .alert--banner h6 {
+    font-size: 2.2vh;
+    letter-spacing: 1px;
+  }
+  .alert--banner p {
+    font-size: 1.9vh !important;
+    letter-spacing: 1px;
+    margin-left: 6%;
+    margin-top: -1%;
+  }
+
+  /****** questions ******/
+  .questions {
+    margin-top: 16rem;
+  }
+  .questions h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .questions h1 span {
+    font-size: 1.5rem;
+    float: right;
+  }
+  .questions p {
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+  }
+  /* options */
+  .options .btn {
+    font-size: 1.7rem;
+    padding: 1.2rem 1.7rem;
+  }
+  .options .btn-option {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1%;
+  }
+  .options .btn-option.answer {
+    opacity: 1;
+  }
+
+  /****** finished--screen ******/
+  .finished--screen {
+    margin: 15%;
+  }
+  .screen--container {
+    padding: 5%;
+  }
+  .finished--screen h3 {
+    font-size: 3.4rem;
+    text-align: center;
+  }
+  .finished--screen p {
+    font-size: 2.3vh;
+    margin-top: 1%;
+  }
+  .finished--screen span {
+    float: right;
+  }
+  .finished--screen button {
+    font-size: 1.6rem;
+    padding: 1rem 1.7rem;
+    margin-top: 4%;
+  }
+  /****** footer ******/
+  .footer {
+    position: absolute;
+    top: 75%;
+  }
+  .footer .line--divider {
+    width: 138rem;
+  }
+  .footer h6 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-top: 1%;
+  }
+  .btn--actions {
+    margin-left: 122rem;
+    margin-top: -2%;
+  }
+  .footer button {
+    font-size: 1.4rem;
+    padding: 1rem 1.7rem;
+  }
+  .footer button:hover {
+    font-size: 1.4rem;
+  }
+  .left--btn {
+    margin-right: 6px;
+  }
+  .footer span {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin-top: 1%;
+    margin-bottom: 6%;
+  }
+}
+
+/************************ Extra large devices (extra large desktops, 1900px and up) ********************************/
+@media (min-width: 2000px) {
+  body {
+    display: none;
+  }
+}
